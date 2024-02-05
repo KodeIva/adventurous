@@ -21,13 +21,13 @@ const Navbar = () => {
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
           </li>
           <li>
-            <Link to="/" onClick={() => setClick(!click) }>Holiday</Link>
+            <Link to="/holiday" onClick={() => setClick(!click) }>Holiday</Link>
           </li>
           <li>
-            <Link to="services" onClick={() => setClick(!click)}>City Breaks</Link>
+            <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
           </li>
           <li>
-            <Link to="products" onClick={() => setClick(!click)}>Articles</Link>
+            <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
           </li>
         </ul>}
       </div>
