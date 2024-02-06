@@ -21,7 +21,7 @@ const Navbar = () => {
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
           </li>
           <li>
-            <Link to="/holiday" onClick={() => setClick(!click) }>Holiday</Link>
+            <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
           </li>
           <li>
             <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
