@@ -12,7 +12,23 @@ const Navbar = () => {
     <div className="nav">
      <div className="nav-container">
       <Link to="/">ADVENTUROUS <SiYourtraveldottv/> </Link>
-      <div className="menu-icon">
+      <div >
+        <ul>
+          <li>
+            <Link to="/" onClick={() => setClick(!click) }>Home</Link>
+          </li>
+           <li>
+            <Link to="/" onClick={() => setClick(!click) }>Holidays</Link>
+          </li>
+           <li>
+            <Link to="/" onClick={() => setClick(!click) }>City Breaks</Link>
+          </li>
+           <li>
+            <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
+          </li>
+        </ul>
+      </div>
+      <div className="menu-icon md:invisible ">
        <i onClick={() => setClick(!click)}>
         {click ? <LiaTimesSolid /> : <AiOutlineBars/>}
        </i>
