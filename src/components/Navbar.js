@@ -12,7 +12,7 @@ const Navbar = () => {
     <div className="nav">
      <div className="nav-container">
       <Link to="/">ADVENTUROUS <SiYourtraveldottv/> </Link>
-      <div >
+      <div className='invisible md:visible'>
         <ul>
           <li>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
