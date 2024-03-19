@@ -6,7 +6,7 @@ import { AiOutlineBars } from "react-icons/ai";
 
 const Navbar = () => {
  const [click,setClick] = useState(false)
- const [open,setOpen] = useState(true)
+ //const [open,setOpen] = useState(true)
 
   return (
     <div className="nav">
