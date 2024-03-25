@@ -9,31 +9,32 @@ const Navbar = () => {
  //const [open,setOpen] = useState(true)
 
   return (
-    <div className="nav">
+    <div className="nav bg-orange-300 flex flex-row p-3 w-[100%] h-[auto] justify-between  " >
      <div className="nav-container">
-      <Link to="/">
+       <Link to="/">
         <span className='flex text-3xl p-2 text-blue-600'>
           <span className='text-blue-600'>ADVENTUR</span>  
           <span className='text-blue-800'><SiYourtraveldottv/></span> 
           <span className='text-blue-600'>US</span></span>
-    </Link>
-      <div className='invisible md:visible'>
-        <ul>
-          <li>
+       </Link>
+      </div>
+      <div className='hidden md:flex bg-yellow-600 w-[70%] justify-center '>
+        <ul className='w-[100%] flex flex-row justify-center items-center '>
+          <li className='text-xl mx-4 text-white'>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
           </li>
-           <li>
+           <li className='text-xl mx-4 text-white'>
             <Link to="/" onClick={() => setClick(!click) }>Holidays</Link>
           </li>
-           <li>
+           <li className='text-xl mx-4 text-white'>
             <Link to="/" onClick={() => setClick(!click) }>City Breaks</Link>
           </li>
-           <li>
+           <li className='text-xl mx-4 text-white'>
             <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
           </li>
         </ul>
       </div>
-      <div className="menu-icon md:invisible ">
+      <div className="menu-icon md:hidden ">
        <i onClick={() => setClick(!click)}>
         {click ? <LiaTimesSolid /> : <AiOutlineBars/>}
        </i>
@@ -51,7 +52,7 @@ const Navbar = () => {
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
           </li>
         </ul>}
-      </div>
+      
      </div>
     </div>
   )
