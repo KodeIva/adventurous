@@ -34,24 +34,25 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="menu-icon md:hidden ">
+      <div className="menu-icon md:hidden bg-pink-300 w-[100%] h-[auto]">
        <i onClick={() => setClick(!click)}>
-        {click ? <LiaTimesSolid /> : <AiOutlineBars/>}
+        {click ? <LiaTimesSolid className='text-5xl text-red-600 absolute right-5' /> : <AiOutlineBars className='text-5xl text-blue-600 hover:rotate-180 absolute right-5 '/>}
        </i>
-        {click && <ul className='mob-menu' style={{color: 'red'}}>
-          <li>
+        {click && 
+         <ul className='mob-menu transition-all  ' style={{color: 'white'}}>
+           <li className='ml-4 mt-8'>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
-          </li>
-          <li>
+           </li>
+           <li className='ml-4 mt-8'>
             <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
-          </li>
-          <li>
+           </li>
+           <li className='ml-4 mt-8'>
             <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
-          </li>
-          <li>
+           </li>
+           <li className='ml-4 mt-8 mb-8'>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
-          </li>
-        </ul>}
+           </li>
+         </ul>}
       
      </div>
     </div>
