@@ -9,7 +9,8 @@ const Navbar = () => {
  //const [open,setOpen] = useState(true)
 
   return (
-    <div className="nav bg-orange-300 flex flex-row p-3 w-[100%] h-[auto] justify-between  " >
+    <>
+    <div className="nav flex flex-row p-3 w-[100%] h-[auto] justify-between  " >
      <div className="nav-container">
        <Link to="/">
         <span className='flex text-3xl p-2 text-blue-600'>
@@ -18,7 +19,7 @@ const Navbar = () => {
           <span className='text-blue-600'>US</span></span>
        </Link>
       </div>
-      <div className='hidden md:flex bg-yellow-600 w-[70%] justify-center '>
+      <div className='hidden md:flex w-[70%] justify-center '>
         <ul className='w-[100%] flex flex-row justify-center items-center '>
           <li className='text-xl mx-4 text-white'>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
@@ -33,13 +34,15 @@ const Navbar = () => {
             <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
           </li>
         </ul>
-      </div>
-      <div className="menu-icon md:hidden bg-pink-300 w-[100%] h-[auto]">
+      </div>  
+      <div className="menu-icon md:hidden w-[100%] h-[auto] ">
        <i onClick={() => setClick(!click)}>
-        {click ? <LiaTimesSolid className='text-5xl text-red-600 absolute right-5' /> : <AiOutlineBars className='text-5xl text-blue-600 hover:rotate-180 absolute right-5 '/>}
+        {click ? <LiaTimesSolid className='text-5xl text-red-600 absolute right-5' /> : <AiOutlineBars className='text-5xl text-blue-600 hover:rotate-180 absolute right-5 '
+                        
+        />}
        </i>
         {click && 
-         <ul className='mob-menu transition-all  ' style={{color: 'white'}}>
+         <ul className='mob-menu transition-all ' style={{color: 'blue'}}>
            <li className='ml-4 mt-8'>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
@@ -53,9 +56,9 @@ const Navbar = () => {
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
          </ul>}
-      
+      </div>
      </div>
-    </div>
+  </>
   )
 }
 
