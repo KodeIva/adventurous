@@ -11,7 +11,12 @@ const Navbar = () => {
   return (
     <div className="nav">
      <div className="nav-container">
-      <Link to="/">ADVENTUROUS <SiYourtraveldottv/> </Link>
+      <Link to="/">
+        <span className='flex text-3xl p-2 text-blue-600'>
+          <span className='text-blue-600'>ADVENTUR</span>  
+          <span className='text-blue-800'><SiYourtraveldottv/></span> 
+          <span className='text-blue-600'>US</span></span>
+    </Link>
       <div className='invisible md:visible'>
         <ul>
           <li>
