@@ -42,17 +42,17 @@ const Navbar = () => {
         />}
        </i>
         {click && 
-         <ul className='mob-menu transition-all ' style={{color: 'blue'}}>
-           <li className='ml-4 mt-8'>
+         <ul className='mob-menu transition-all absolute right-5' style={{color: 'blue'}}>
+           <li className='mr-4 mt-40'>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
-           <li className='ml-4 mt-8'>
+           <li className='mr-4 mt-14'>
             <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
            </li>
-           <li className='ml-4 mt-8'>
+           <li className='mr-4 mt-14'>
             <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
            </li>
-           <li className='ml-4 mt-8 mb-8'>
+           <li className='mr-4 mt-14 mb-8'>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
          </ul>}
