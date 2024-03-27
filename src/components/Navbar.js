@@ -24,16 +24,16 @@ const Navbar = () => {
       <div className='hidden md:flex w-[70%] justify-center '>
         <ul className='w-[100%] flex flex-row justify-center items-center text-blue-600'>
           <li className='text-xl mx-4 '>
-            <Link to="/" onClick={() => setClick(!click) }>Home</Link>
+            <Link to="/">Home</Link>
           </li>
            <li className='text-xl mx-4'>
-            <Link to="/" onClick={() => setClick(!click) }>Holidays</Link>
+            <Link to="/">Holidays</Link>
           </li>
            <li className='text-xl mx-4'>
-            <Link to="/" onClick={() => setClick(!click) }>City Breaks</Link>
+            <Link to="/">City Breaks</Link>
           </li>
            <li className='text-xl mx-4'>
-            <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
+            <Link to="/">Articles</Link>
           </li>
         </ul>
         <div>
