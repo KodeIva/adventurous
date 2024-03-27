@@ -22,7 +22,7 @@ const Navbar = () => {
        </Link>
       </div>
       <div className='hidden md:flex w-[70%] justify-center '>
-        <ul className='w-[100%] flex flex-row justify-center items-center text-blue-600'>
+        <ul className='w-[80%] flex flex-row justify-center items-center text-blue-600'>
           <li className='text-xl mx-4 '>
             <Link to="/">Home</Link>
           </li>
@@ -36,9 +36,9 @@ const Navbar = () => {
             <Link to="/">Articles</Link>
           </li>
         </ul>
-        <div>
-         <LuSearch />
-         <IoPerson />
+        <div className='flex flex-row items-center text-blue-500 text-2xl '>
+         <LuSearch className='m-2 hover:text-blue-800 cursor-pointer' />
+         <IoPerson className='m-2 hover:text-blue-800 cursor-pointer' />
         </div>
       </div>  
    
