@@ -3,6 +3,8 @@ import { Link }  from 'react-router-dom'
 import {SiYourtraveldottv} from 'react-icons/si'
 import { LiaTimesSolid } from "react-icons/lia";
 import { AiOutlineBars } from "react-icons/ai";
+import { IoPerson } from "react-icons/io5";
+import { LuSearch } from "react-icons/lu";
 
 const Navbar = () => {
  const [click,setClick] = useState(false)
@@ -10,7 +12,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="nav flex flex-row p-3 w-[100%] h-[auto] justify-between  " >
+    <div className="nav flex flex-row p-3 w-[100%] h-[auto] justify-between " >
      <div className="nav-container">
        <Link to="/">
         <span className='flex text-3xl p-2 text-blue-600'>
@@ -34,8 +36,13 @@ const Navbar = () => {
             <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
           </li>
         </ul>
+        <div>
+         <LuSearch />
+         <IoPerson />
+        </div>
       </div>  
-      <div className="menu-icon md:hidden w-[100%] h-[auto] bg-slate-100 ">
+   
+      <div className="menu-icon md:hidden w-[80%] h-[auto] bg-slate-100 ">
        <i className=' text-2xl w-10 h-10 absolute right-5' onClick={() => setClick(!click)}>
         {click 
            ? 
