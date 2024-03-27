@@ -20,26 +20,28 @@ const Navbar = () => {
        </Link>
       </div>
       <div className='hidden md:flex w-[70%] justify-center '>
-        <ul className='w-[100%] flex flex-row justify-center items-center '>
-          <li className='text-xl mx-4 text-white'>
+        <ul className='w-[100%] flex flex-row justify-center items-center text-blue-600'>
+          <li className='text-xl mx-4 '>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
           </li>
-           <li className='text-xl mx-4 text-white'>
+           <li className='text-xl mx-4'>
             <Link to="/" onClick={() => setClick(!click) }>Holidays</Link>
           </li>
-           <li className='text-xl mx-4 text-white'>
+           <li className='text-xl mx-4'>
             <Link to="/" onClick={() => setClick(!click) }>City Breaks</Link>
           </li>
-           <li className='text-xl mx-4 text-white'>
+           <li className='text-xl mx-4'>
             <Link to="/" onClick={() => setClick(!click) }>Articles</Link>
           </li>
         </ul>
       </div>  
-      <div className="menu-icon md:hidden w-[100%] h-[auto] ">
-       <i onClick={() => setClick(!click)}>
-        {click ? <LiaTimesSolid className='text-5xl text-red-600 absolute right-5' /> : <AiOutlineBars className='text-5xl text-blue-600 hover:rotate-180 absolute right-5 '
-                        
-        />}
+      <div className="menu-icon md:hidden w-[100%] h-[auto] bg-slate-100 ">
+       <i className=' text-2xl w-10 h-10 absolute right-5' onClick={() => setClick(!click)}>
+        {click 
+           ? 
+           <LiaTimesSolid className='cursor-pointer z-10 text-5xl text-red-600 absolute right-5' /> 
+           : 
+           <AiOutlineBars className='cursor-pointer text-5xl text-blue-600 hover:rotate-180 absolute right-5 '/>}
        </i>
         {click && 
          <ul className='mob-menu transition-all absolute right-5' style={{color: 'blue'}}>
