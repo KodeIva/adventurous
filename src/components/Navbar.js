@@ -52,19 +52,23 @@ const Navbar = () => {
         }
        </i>
         {click && 
-         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-1  bg-orange-500 w-[100%]' style={{color: 'blue'}}>
-           <li className='pr-4 border-b-2  bg-white w-[90%] text-center pb-5 pt-5 '>
+         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-1 bg-teal-50 w-[100%]' style={{color: 'blue'}}>
+           <li className='pr-4 border-b-2  border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
-           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
+           <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
            </li>
-           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
+           <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
            </li>
-           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
+           <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
+           <div className='flex flex-col bg-pink-100 w-[90%]'>
+            <button className='w-[100%] my-2 bg-teal-300 text-white pb-3 pt-3'>Search</button>
+            <button className='w-[100%] my-2 bg-teal-300 text-white pb-3 pt-3'>Account</button>
+           </div>
          </ul>
          }
       </div>
