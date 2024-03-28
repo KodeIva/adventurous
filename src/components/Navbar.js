@@ -52,17 +52,17 @@ const Navbar = () => {
         }
        </i>
         {click && 
-         <ul className='mob-menu transition-all absolute top-0 right-5' style={{color: 'blue'}}>
-           <li className='mr-4 mt-40'>
+         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-1  bg-orange-500 w-[100%]' style={{color: 'blue'}}>
+           <li className='pr-4 border-b-2  bg-white w-[90%] text-center pb-5 pt-5 '>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
-           <li className='mr-4 mt-14'>
+           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
             <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
            </li>
-           <li className='mr-4 mt-14'>
+           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
             <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
            </li>
-           <li className='mr-4 mt-14 mb-8'>
+           <li className='pr-4 border-b-2 bg-white w-[90%] text-center pb-5 pt-5 '>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
          </ul>
