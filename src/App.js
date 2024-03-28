@@ -8,6 +8,7 @@ import Articles from './components/Articles';
 
 function App() {
   return (
+   <div className='bg-teal-50 h-[100vh]'>
     <BrowserRouter>
      <Navbar/>
       <Routes>
@@ -17,6 +18,7 @@ function App() {
         <Route path='/articles' element={<Articles/>} />
       </Routes>
     </BrowserRouter>
+   </div> 
   );
 }
 
