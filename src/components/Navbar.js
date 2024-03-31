@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </div>  
    
-      <div className="flex items-center menu-icon md:hidden w-[70%] h-[auto] bg-slate-100">
+      <div className="flex items-center menu-icon md:hidden w-[70%] h-[auto] overflow-visible">
        <i className=' text-2xl w-10 h-10 absolute right-5' onClick={() => setClick(!click)}>
         {click 
            ? 
@@ -52,7 +52,7 @@ const Navbar = () => {
         }
        </i>
         {click && 
-         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-1 bg-teal-50 w-[100%]' style={{color: 'blue'}}>
+         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-0 bg-teal-100/90 w-[100%]' style={{color: 'blue'}}>
            <li className='pr-4 border-b-2  border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
@@ -65,9 +65,9 @@ const Navbar = () => {
            <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
-           <div className='flex flex-col bg-pink-100 w-[90%]'>
-            <button className='w-[100%] my-2 bg-teal-300 text-white pb-3 pt-3'>Search</button>
-            <button className='w-[100%] my-2 bg-teal-300 text-white pb-3 pt-3'>Account</button>
+           <div className='flex flex-col w-[90%]'>
+            <button className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Search</button>
+            <button className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Account</button>
            </div>
          </ul>
          }
