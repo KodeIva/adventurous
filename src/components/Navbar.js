@@ -27,13 +27,13 @@ const Navbar = () => {
             <Link to="/">Home</Link>
           </li>
            <li className='text-base xl:text-xl mx-4'>
-            <Link to="/">Holidays</Link>
+            <Link to="/holidays">Holidays</Link>
           </li>
            <li className='text-base xl:text-xl mx-4'>
-            <Link to="/">City Breaks</Link>
+            <Link to="/city-breaks">City Breaks</Link>
           </li>
            <li className='text-base xl:text-xl mx-4'>
-            <Link to="/">Articles</Link>
+            <Link to="/articles">Articles</Link>
           </li>
         </ul>
         <div className='flex flex-row items-center text-blue-500 text-2xl '>
