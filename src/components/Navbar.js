@@ -42,17 +42,17 @@ const Navbar = () => {
         </div>
       </div>  
    
-      <div className="flex items-center menu-icon md:hidden w-[70%] h-[auto] overflow-visible">
+      <div className="flex items-center menu-icon md:hidden w-[70%] h-[auto]">
        <i className=' text-2xl w-10 h-10 absolute right-5' onClick={() => setClick(!click)}>
         {click 
            ? 
-           <LiaTimesSolid className='cursor-pointer z-10 text-4xl text-red-600 absolute right-5' /> 
+           <LiaTimesSolid className='cursor-pointer z-10 text-4xl text-red-600 absolute right-5 transition duration-700' /> 
            : 
-           <AiOutlineBars className='cursor-pointer text-4xl text-blue-600 hover:rotate-180 absolute right-5 '/>
+           <AiOutlineBars className='cursor-pointer text-4xl text-blue-600 hover:rotate-180 absolute right-5 transition duration-700'/>
         }
        </i>
         {click && 
-         <ul className='flex flex-col items-center mob-menu transition-all absolute top-0 right-0 bg-teal-100/90 w-[100%]' style={{color: 'blue'}}>
+         <ul className='flex flex-col items-center mob-menu absolute top-0 right-0 bg-teal-100/90 w-[100%] ' style={{color: 'blue'}}>
            <li className='pr-4 border-b-2  border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/" onClick={() => setClick(!click) }>Home</Link>
            </li>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
            <div className='flex flex-col w-[90%]'>
-            <button className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Search</button>
+            <button className='w-[100%]  my-2 bg-gradient-to-r from-teal-500 to-teal-300 rounded-md hover:bg-white hover:bg-gradient-to-l hover:from-teal-500 hover:to-teal-300 text-white pb-3 pt-3 transition duration-700 delay-900'>Search</button>
             <button className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Account</button>
            </div>
          </ul>
