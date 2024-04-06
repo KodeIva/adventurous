@@ -60,7 +60,7 @@ const Navbar = () => {
             <Link to="/holidays" onClick={() => setClick(!click) }>Holidays</Link>
            </li>
            <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
-            <Link to="/cityBreaks" onClick={() => setClick(!click)}>City Breaks</Link>
+            <Link to="/city-breaks" onClick={() => setClick(!click)}>City Breaks</Link>
            </li>
            <li className='pr-4 border-b-2 border-blue-100 w-[90%] text-center pb-5 pt-5 '>
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
