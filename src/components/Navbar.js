@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="nav flex flex-row p-3 w-[100%] h-[auto] justify-between" >
-     <div className="nav-container">
+    <div className="nav flex flex-row p-3 w-[100%] h-[auto] justify-between z-50" >
+     <div className="nav-container z-50">
        <Link to="/">
         <span className='flex text-2xl xl:text-3xl p-2 text-blue-600'>
           <span className='text-blue-600'>ADVENTUR</span>  
@@ -21,7 +21,7 @@ const Navbar = () => {
           <span className='text-blue-600'>US</span></span>
        </Link>
       </div>
-      <div className='hidden md:flex w-[70%] justify-center '>
+      <div className='hidden md:flex w-[70%] justify-center z-50 '>
         <ul className='w-[80%] flex flex-row justify-center items-center text-blue-600'>
           <li className=' text-base xl:text-xl mx-4'>
             <Link to="/">Home</Link>
