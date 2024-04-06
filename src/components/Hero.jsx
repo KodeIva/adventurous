@@ -4,7 +4,7 @@ import beachLx from '../assets/beach-lx.mp4'
 const Hero = () => {
   return (
     <div className='w-full h-screen relative'>
-     <video autoPlay loop muted 
+     <video autoPlay loop muted  disablePictureInPicture
        className='w-full h-full object-cover' 
        src={beachLx}
      />
