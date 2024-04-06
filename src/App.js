@@ -1,10 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './pages/Home';
 import Navbar from './components/Navbar';
-import CityBreaks from './components/CityBreaks';
-import Holidays from './components/Holidays';
-import Articles from './components/Articles';
+import CityBreaks from './pages/CityBreaks';
+import Holidays from './pages/Holidays';
+import Articles from './pages/Articles';
 
 function App() {
   return (
