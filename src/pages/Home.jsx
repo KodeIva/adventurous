@@ -10,6 +10,8 @@ const Home = () => {
   function handleSubmit(e) {
    e.preventDefault()
    console.log(inputValue);
+   let link = `https://en.wikipedia.org/wiki/${inputValue}`
+   console.log(link);
   }
 
   return (
