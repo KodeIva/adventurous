@@ -15,7 +15,7 @@ const Home = () => {
             placeholder='Search Destinations...' 
             className='w-[300px] md:w-[400px] p-2 outline-none rounded-tl-md rounded-bl-md bg-gray-50/90 text-slate-700'  
           />
-          <button className='flex justify-center text-center text-slate-800 p-2 px-3 bg-white rounded-br-md rounded-tr-md'><LuSearch className='text-2xl text-teal-600' /></button>
+          <button className='flex justify-center text-center text-slate-800 p-2 px-3 bg-white rounded-br-md rounded-tr-md'><LuSearch className='text-2xl text-teal-600 hover:scale-125 transition-all duration-500 ' /></button>
         </div>
       </form>
       
