@@ -12,16 +12,12 @@ const Holidays = () => {
   return (
     <div className='max-w-[1240px] mx-auto py-16 px-4 text-center'>
      <h1>All Inclusive Resorts</h1>
-     <div className='flex flex-col md:flex-row w-[100%] text-center'>
-      <div className='w-[90%]  bg-orange-500 m-2'>
-        <img className='m-1 md:w-[50%]' src={Carribean} alt="" />
-      </div>
-      <div className='flex flex-row flex-wrap w-[90%] bg-orange-500 m-2'>
-        <img className='m-1 md:w-[50%]' src={Tahiti} alt="" />
-        <img className='m-1 md:w-[50%]' src={Maldives} alt="" />
-        <img className='m-1 md:w-[50%]' src={Thailand} alt="" />
-        <img className='m-1 md:w-[50%]' src={Cyprus} alt="" />
-      </div>
+     <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>
+        <img className='col-span-2 md:col-span-3 row-span-2 w-full' src={Carribean} alt={Carribean} />
+        <img className='h-[100%]' src={Tahiti} alt={Tahiti} />
+        <img className='h-[100%]' src={Maldives} alt={Maldives} />
+        <img className='h-[100%]' src={Thailand} alt={Thailand} />
+        <img className='h-[100%]' src={Cyprus} alt={Cyprus} />
      </div>
     </div>
   )
