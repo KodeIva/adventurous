@@ -19,6 +19,12 @@ const Holidays = () => {
         <img className='h-[100%] hover:contrast-150 transition-all duration-500' src={Thailand} alt={Thailand} />
         <img className='h-[100%] hover:contrast-150 transition-all duration-500' src={Cyprus} alt={Cyprus} />
      </div>
+     <div className='flex flex-col justify-center items-center  w-[100%] h-[auto] py-8 bg-slate-600'>
+      <h2 className='w-[80%] text-2xl tracking-wide text-teal-600 my-4 py-4 bg-blue-950 '>Carribean</h2>
+      <p className='w-[80%] bg-orange-700 '>      
+       Situated largely on the Caribbean Plate, the region has more than 700 islands, islets, reefs, and cays. Island arcs delineate the northern and eastern edges of the Caribbean Sea:[7] the Greater Antilles in the north and the Lesser Antilles, which includes the Leeward Antilles, in the east and south. The nearby Lucayan Archipelago, comprising The Bahamas and the Turks and Caicos Islands, is considered to be a part of the Caribbean despite not bordering the Caribbean Sea. All the islands in the Antilles plus the Lucayan Archipelago form the West Indies, which is often interchangeable with the term Caribbean.
+      </p>
+     </div>
     </div>
   )
 }
