@@ -1,22 +1,21 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import {SiYourtraveldottv} from 'react-icons/si'
-import Carribean from '../assets/caribbean.jpg'
-import Tahiti from '../assets/tahiti.jpg'
-import Maldives from '../assets/maldives.jpg'
-import Thailand from '../assets/thailand.jpg'
-import Cyprus from '../assets/cyprus.jpg'
 import { useState } from 'react'
+import {destinations} from '../data'
+
 
 
 const Holidays = () => {
-  const [isClicked, setIsClicked] = useState('false')
+  const [isClicked, setIsClicked] = useState(null)
+  const [holidays,setHolidays] = useState(destinations)
 
-  function showText() {
-    setIsClicked(!isClicked)
-  }
+
+  
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 text-center'>
+    <>
+     {/** 
+   <div className='max-w-[1240px] mx-auto py-16 px-4 text-center'>
      <h1 className='text-3xl my-2  text-teal-600 tracking-wide  '>All Inclusive Resorts</h1>
      <div className='grid grid-rows-none md:grid-cols-5 py-4 gap-2 md:gap-4'>
         <img 
@@ -37,8 +36,24 @@ const Holidays = () => {
       </p>
      </div>
      }
-     
+    </div> 
+*/}
+
+    <div>
+      {holidays.map((holiday) => {
+        const {id,image,info} = holiday
+        return(
+         <li key={id}>
+            <img onClick={() => setIsClicked(id)} src={image} alt="" />
+            {isClicked === id && (
+                <p>{info}</p>
+               )}
+         </li>
+        )
+      })}        
     </div>
+
+    </>
   )
 }
 
