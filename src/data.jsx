@@ -1,8 +1,8 @@
-import Carribean from '../assets/caribbean.jpg'
-import Tahiti from '../assets/tahiti.jpg'
-import Maldives from '../assets/maldives.jpg'
-import Thailand from '../assets/thailand.jpg'
-import Cyprus from '../assets/cyprus.jpg'
+import Carribean from './assets/caribbean.jpg'
+import Tahiti from './assets/tahiti.jpg'
+import Maldives from './assets/maldives.jpg'
+import Thailand from './assets/thailand.jpg'
+import Cyprus from './assets/cyprus.jpg'
 
 export const destinations = [
     {
