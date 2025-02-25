@@ -19,7 +19,7 @@ function App() {
         <Route path='/city-breaks' element={<CityBreaks/>} />
         <Route path='/articles' element={<Articles/>} />
       </Routes>
-      <ScrollToTop smooth/>
+      <ScrollToTop smooth style={{display: 'flex', justifyContent: 'center', alignItems: 'center', width: '50px'}}/>
       <Footer />
     </BrowserRouter>
    </div> 
