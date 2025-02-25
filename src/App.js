@@ -6,6 +6,7 @@ import CityBreaks from './pages/CityBreaks';
 import Holidays from './pages/Holidays';
 import Articles from './pages/Articles';
 import Footer from './components/Footer';
+import ScrollToTop from 'react-scroll-to-top';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/city-breaks' element={<CityBreaks/>} />
         <Route path='/articles' element={<Articles/>} />
       </Routes>
+      <ScrollToTop smooth/>
       <Footer />
     </BrowserRouter>
    </div> 
