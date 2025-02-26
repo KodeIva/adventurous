@@ -7,10 +7,12 @@ import {destinations} from '../data'
 
 
 const Holidays = () => {
-  const [isClicked, setIsClicked] = useState(null)
+  const [isClicked, setIsClicked] = useState(true)
   const [holidays,setHolidays] = useState(destinations)
 
-
+  const infoToggle = () => {
+    setIsClicked(!isClicked)
+  }
   
   return (
     <>
@@ -44,7 +46,9 @@ const Holidays = () => {
         const {id,image,info} = holiday
         return(
          <li key={id}>
-            <img onClick={() => setIsClicked(id)} src={image} alt="" />
+            <img src={image} alt="" />
+            <button onClick={() => setIsClicked(id)}  >Read Info</button>
+            <button onClick={() => setIsClicked(false)}>Hide Info </button>
             {isClicked === id && (
                 <p>{info}</p>
                )}
