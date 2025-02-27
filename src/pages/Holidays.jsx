@@ -48,9 +48,13 @@ const Holidays = () => {
          <li key={id}>
             <img src={image} alt="" />
             <button onClick={() => setIsClicked(id)}  >Read Info</button>
-            <button onClick={() => setIsClicked(false)}>Hide Info </button>
+            
             {isClicked === id && (
+              <>
                 <p>{info}</p>
+                <button onClick={() => setIsClicked(false)}>Hide Info </button>
+              </>
+                
                )}
          </li>
         )
