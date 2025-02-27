@@ -42,7 +42,8 @@ const Holidays = () => {
         const {id,image,info} = holiday
         console.log(info.length);
         return(
-         <li key={id}>
+          <div key={id} className='flex flex-col justify-center items-center bg-yellow-500  w-[100%]'>
+         
             <img src={image} alt="" />
             {isClicked === id ? (
                <>
@@ -56,7 +57,8 @@ const Holidays = () => {
                </>
               )               
             }
-         </li>
+         
+         </div>
         )
       })}        
     </div>
