@@ -37,25 +37,25 @@ const Holidays = () => {
     </div> 
 */}
 
-    <div className='flex flex-col justify-center items-center align-middle w-[100%] lg:bg-green-500 lg:grid lg:grid-cols-2 lg:gap-3'>
+    <div className='flex flex-col justify-center items-center align-middle w-[100%] lg:grid lg:grid-cols-2 lg:gap-3'>
       {holidays.map((holiday) => {
         const {id,image,info} = holiday
         console.log(info.length);
         return(
-          <div key={id} className='flex flex-col py-10 justify-center items-center bg-yellow-500  w-[100%]'>
+          <div key={id} className='flex flex-col py-10 justify-center items-center w-[100%]'>
          
             <img className='w-[90%] sm:w-[80%]' src={image} alt="" />
             {isClicked === id ? (
                <>
                  <p className='w-[80%] sm:w-[80%]'>{info}
-                   <button onClick={() => setIsClicked(false)}> Hide Info </button>
+                   <button className=' ml-2 w-24 text-red-500' onClick={() => setIsClicked(false)}> Hide Info </button>
                  </p>
                  
                </>
               ): (
                <> 
                  <p className='w-[80%] sm:w-[80%]'>{info.substring(0,120)}
-                   <button onClick={() => setIsClicked(id)}> Read Info</button> 
+                   <button className='w-24 text-blue-500' onClick={() => setIsClicked(id)}> Read Info</button> 
                  </p>
                  
                </>
