@@ -37,7 +37,7 @@ const Holidays = () => {
     </div> 
 */}
 
-    <div className='flex flex-col justify-center items-center align-middle w-[100%] '>
+    <div className='flex flex-col justify-center items-center align-middle w-[100%] lg:bg-green-500 lg:grid lg:grid-cols-2 lg:gap-3'>
       {holidays.map((holiday) => {
         const {id,image,info} = holiday
         console.log(info.length);
