@@ -37,7 +37,7 @@ const Holidays = () => {
     </div> 
 */}
 
-    <div>
+    <div className='flex flex-col justify-center items-center align-middle w-[100%] '>
       {holidays.map((holiday) => {
         const {id,image,info} = holiday
         console.log(info.length);
