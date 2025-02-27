@@ -42,18 +42,22 @@ const Holidays = () => {
         const {id,image,info} = holiday
         console.log(info.length);
         return(
-          <div key={id} className='flex flex-col justify-center items-center bg-yellow-500  w-[100%]'>
+          <div key={id} className='flex flex-col py-10 justify-center items-center bg-yellow-500  w-[100%]'>
          
-            <img src={image} alt="" />
+            <img className='w-[90%] sm:w-[80%]' src={image} alt="" />
             {isClicked === id ? (
                <>
-                 <p>{info}</p>
-                 <button onClick={() => setIsClicked(false)}>Hide Info </button>
+                 <p className='w-[80%] sm:w-[80%]'>{info}
+                   <button onClick={() => setIsClicked(false)}> Hide Info </button>
+                 </p>
+                 
                </>
               ): (
                <> 
-                 <p>{info.substring(0,120)}</p>
-                 <button onClick={() => setIsClicked(id)}  >Read Info</button> 
+                 <p className='w-[80%] sm:w-[80%]'>{info.substring(0,120)}
+                   <button onClick={() => setIsClicked(id)}> Read Info</button> 
+                 </p>
+                 
                </>
               )               
             }
