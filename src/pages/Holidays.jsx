@@ -10,10 +10,6 @@ const Holidays = () => {
   const [isClicked, setIsClicked] = useState(true)
   const [holidays,setHolidays] = useState(destinations)
 
-  const infoToggle = () => {
-    setIsClicked(!isClicked)
-  }
-  
   return (
     <>
      {/** 
@@ -44,18 +40,22 @@ const Holidays = () => {
     <div>
       {holidays.map((holiday) => {
         const {id,image,info} = holiday
+        console.log(info.length);
         return(
          <li key={id}>
             <img src={image} alt="" />
-            <button onClick={() => setIsClicked(id)}  >Read Info</button>
-            
-            {isClicked === id && (
-              <>
-                <p>{info}</p>
-                <button onClick={() => setIsClicked(false)}>Hide Info </button>
-              </>
-                
-               )}
+            {isClicked === id ? (
+               <>
+                 <p>{info}</p>
+                 <button onClick={() => setIsClicked(false)}>Hide Info </button>
+               </>
+              ): (
+               <> 
+                 <p>{info.substring(0,120)}</p>
+                 <button onClick={() => setIsClicked(id)}  >Read Info</button> 
+               </>
+              )               
+            }
          </li>
         )
       })}        
