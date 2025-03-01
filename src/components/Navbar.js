@@ -38,7 +38,11 @@ const Navbar = () => {
         </ul>
         <div className='flex flex-row items-center text-blue-500 text-2xl '>
          <LuSearch className='m-2 hover:text-blue-800 cursor-pointer' />
-         <IoPerson className='m-2 hover:text-blue-800 cursor-pointer' />
+         <Link to='/signin'>
+           <IoPerson 
+             className='m-2 hover:text-blue-800 cursor-pointer'
+             /> 
+         </Link>
         </div>
       </div>  
    
