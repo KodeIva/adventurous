@@ -12,8 +12,8 @@ const SignIn = () => {
             <label className='text-white tracking-wider mb-1 pl-2' htmlFor="">Password</label>
             <input className='h-10 rounded-xl outline-none' type="text" />
           </div>
+          <button className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%] my-8 font-semibold tracking-wider'>Sign in</button>
         </div>
-     
     </form>
   )
 }
