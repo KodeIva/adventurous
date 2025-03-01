@@ -16,6 +16,10 @@ const SignIn = () => {
           <div>
             <button className='pr-[20px] text-sm text-blue-400'>Forgot Password?</button>
           </div>
+          <div className='mt-9'>
+            <span className='text-sm text-white'>Need an account? </span>
+            <button className='text-sm text-blue-400'> Sign up now!</button>
+          </div>
         </div>
     </form>
   )
