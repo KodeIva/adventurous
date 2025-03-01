@@ -13,6 +13,9 @@ const SignIn = () => {
             <input className='h-10 rounded-xl outline-none' type="text" />
           </div>
           <button className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%]  border-2 my-8 font-semibold tracking-wider hover:bg-slate-500 hover:text-white hover:border-white duration-500'>Sign in</button>
+          <div>
+            <button className='pr-[20px] text-sm text-blue-400'>Forgot Password?</button>
+          </div>
         </div>
     </form>
   )
