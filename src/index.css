@@ -11,3 +11,9 @@
   @apply font-[Poppins]
  }
 }
+
+@layer components {
+    .label {
+        @apply text-white tracking-wider mb-1 pl-2;
+    }
+}
