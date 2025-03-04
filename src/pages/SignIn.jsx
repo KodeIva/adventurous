@@ -23,7 +23,6 @@ const SignIn = () => {
               type="text" 
               id='password'
               value={password}
-              
               />
           </div>
           <button className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%]  border-2 my-8 font-semibold tracking-wider hover:bg-slate-500 hover:text-white hover:border-white duration-500'>Sign in</button>
