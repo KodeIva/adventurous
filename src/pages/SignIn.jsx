@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import { LuHeading1 } from 'react-icons/lu'
+import { Link } from 'react-router-dom'
+import Home from './Home'
 
 const SignIn = () => {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const [submitted, setSubmitted] = useState(false)
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -10,6 +14,8 @@ const SignIn = () => {
   }
 
   return (
+    <>
+    {!submitted && (
     <form onSubmit={handleSubmit} className='w-full h-[100vh] flex justify-center items-center'>
         <div className='bg-slate-500 w-[80%] sm:w-[60%] lg:w-[40%] xl:w-[30%] h-auto py-9 px-7 mt-[-150px] rounded-xl'>
           <div className="row flex flex-col w-[100%] mb-6 ">
@@ -34,7 +40,14 @@ const SignIn = () => {
               onChange={(e) => setPassword(e.target.value)}
               />
           </div>
-          <button className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%]  border-2 my-8 font-semibold tracking-wider hover:bg-slate-500 hover:text-white hover:border-white duration-500'>Sign in</button>
+          <Link to='/'>
+            <button 
+              type='button'
+               className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%]  border-2 my-8 font-semibold tracking-wider hover:bg-slate-500 hover:text-white hover:border-white duration-500'
+            >
+              Sign in
+          </button>
+          </Link>
           <div>
             <button className='pr-[20px] text-sm text-blue-300 hover:text-white duration-500'>Forgot Password?</button>
           </div>
@@ -44,6 +57,9 @@ const SignIn = () => {
           </div>
         </div>
     </form>
+    )}
+    
+    </>
   )
 }
 
