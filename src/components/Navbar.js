@@ -37,12 +37,11 @@ const Navbar = () => {
           </li>
         </ul>
         <div className='flex flex-row items-center text-blue-500 text-2xl '>
+         <p  className='text-base xl:text-xl mx-4'>
+           <Link to='/signin'>SignIn</Link>
+         </p> 
          <LuSearch className='m-2 hover:text-blue-800 cursor-pointer' />
-         <Link to='/signin'>
-           <IoPerson 
-             className='m-2 hover:text-blue-800 cursor-pointer'
-             /> 
-         </Link>
+         <IoPerson className='m-2 hover:text-blue-800 cursor-pointer'/>
         </div>
       </div>  
    

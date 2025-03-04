@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { LuHeading1 } from 'react-icons/lu'
 import { Link } from 'react-router-dom'
-import Home from './Home'
 
 const SignIn = () => {
   const [email, setEmail] = useState('')
@@ -46,7 +45,7 @@ const SignIn = () => {
                className='h-10 rounded-xl outline-none  text-slate-500 bg-white w-[100%]  border-2 my-8 font-semibold tracking-wider hover:bg-slate-500 hover:text-white hover:border-white duration-500'
             >
               Sign in
-          </button>
+           </button>
           </Link>
           <div>
             <button className='pr-[20px] text-sm text-blue-300 hover:text-white duration-500'>Forgot Password?</button>
