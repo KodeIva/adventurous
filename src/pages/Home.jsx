@@ -18,10 +18,11 @@ const Home = () => {
 
   return (
     <div className='home absolute justify-center text-center top-0 text-white'>
-        <video autoPlay loop muted 
+        <video autoPlay  muted 
        className='absolute w-full h-full object-cover' 
        src={beachLx}
      />
+     <div className='z-0'>
       <h1 className='text-2xl m-1 '>First Class Travel</h1>
       <h2 className='text-xl mb-2'>Top Locations Worldwide</h2>
       <form className='flex  justify-center text-center'>
@@ -43,6 +44,7 @@ const Home = () => {
         </div>
       </form>
      </div> 
+    </div>
   )
 }
 
