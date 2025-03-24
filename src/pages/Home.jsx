@@ -3,9 +3,11 @@ import { useState } from 'react'
 //import Hero from '../components/Hero'
 import '../styles/Home.css'
 import { LuSearch } from "react-icons/lu";
+import beachLx from '../assets/beach-lx.mp4'
 
 const Home = () => {
   const [inputValue,setInputValue] = useState('')
+ 
 
   function handleSubmit(e) {
    e.preventDefault()
@@ -16,9 +18,13 @@ const Home = () => {
 
   return (
     <div className='home absolute justify-center text-center top-0 text-white'>
+        <video autoPlay loop muted 
+       className='absolute w-full h-full object-cover' 
+       src={beachLx}
+     />
       <h1 className='text-2xl m-1 '>First Class Travel</h1>
       <h2 className='text-xl mb-2'>Top Locations Worldwide</h2>
-      <form className='flex justify-center text-center'>
+      <form className='flex  justify-center text-center'>
         <div className='flex flex-row shadow-md shadow-gray-600  rounded-2xl '>
           <input 
             type="text" 
@@ -36,8 +42,7 @@ const Home = () => {
           </button>
         </div>
       </form>
-      
-    </div>
+     </div> 
   )
 }
 
