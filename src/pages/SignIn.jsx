@@ -28,7 +28,7 @@ const SignIn = () => {
           <div className="row flex flex-col w-[100%] mb-6 ">
             <label className="label" htmlFor="email">Email</label>
             <input 
-               className='h-10 rounded-xl outline-none'
+               className='h-10 text-slate-500 font-medium rounded-xl outline-none pl-3'
                type="text" 
                id='email'
                name='email'
@@ -39,7 +39,7 @@ const SignIn = () => {
           <div className="row flex flex-col w-[100%] mb-4">
             <label className='label' htmlFor="password">Password</label>
             <input 
-              className='h-10 rounded-xl outline-none' 
+              className='h-10 text-slate-500 font-medium rounded-xl outline-none pl-3' 
               type="text" 
               id='password'
               name='password'
