@@ -16,4 +16,8 @@
     .label {
         @apply text-white tracking-wider mb-1 pl-2;
     }
+
+    .signin-input {
+        @apply h-10 text-slate-500 font-medium rounded-xl outline-none pl-3;
+    }
 }
