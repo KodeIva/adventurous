@@ -22,6 +22,7 @@ const Home = () => {
        className='absolute w-full h-full object-cover' 
        src={beachLx}
      />
+     <div className='absolute w-full h-full top-0 left-0 bg-gray-900/30'></div>
      <div className='z-0'>
       <h1 className='text-2xl m-1 '>First Class Travel</h1>
       <h2 className='text-xl mb-2'>Top Locations Worldwide</h2>
