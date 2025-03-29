@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom'
 import {SiYourtraveldottv} from 'react-icons/si'
 import { useState } from 'react'
 import {destinations} from '../data'
+import Search from '../components/Search'
 
 
 
@@ -66,7 +67,7 @@ const Holidays = () => {
         )
       })}        
     </div>
-
+    <Search />
     </>
   )
 }
