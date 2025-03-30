@@ -7,9 +7,9 @@ const Search = () => {
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta rerum corporis repellendus esse ratione iste velit in aperiam dolores facere, ad autem quas, asperiores officiis architecto cumque? Exercitationem a quasi ab reiciendis asperiores saepe debitis laudantium? Reiciendis fuga accusamus voluptas voluptates repellendus recusandae, accusantium placeat a suscipit, dicta minus iure!
     </div>
     <div className='flex flex-col justify-center items-center w-[80%] md:w-[40%] lg:w[30%] py-6'>
-        <div className='w-[80%] bg-blue-900 text-white'>
-             <h2>Firts time booking - get 15% off</h2>
-             <button>Book now and save</button>
+        <div className='flex flex-col w-[80%] border-2 text-blue-900 border-blue-900 py-5 justify-center items-center'>
+             <h2 className='uppercase tracking-wide'>Firts time booking - get 15% off</h2>
+             <button className='uppercase tracking-wide w-[100%] bg-blue-900 text-white py-1 '>Book now and save</button>
         </div>
         <form className='flex flex-col justify-center items-center w-[80%]'>
             <div className='w-full py-3 flex flex-col'>
