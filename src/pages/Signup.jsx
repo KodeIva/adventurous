@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 
 const Signup = () => {
@@ -19,6 +20,7 @@ const Signup = () => {
           <input type="password" name="password" required/>
         </div>
         <button>Register</button>
+        <Link to='/signin'>Login</Link>
       </div>
 
     </form>
