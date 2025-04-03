@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 
 const Signup = () => {
   return (
-   <section> 
-    <form method="POST">
+   <section className="flex justify-center bg-blue-50 w-full h-auto py-5"> 
+    <form method="POST" className="bg-red-400 w-[80%] md:w-[50%] lg:w-[30%]">
       <div>
         <h4>Register</h4>
         <div>
