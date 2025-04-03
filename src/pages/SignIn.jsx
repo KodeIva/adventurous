@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { LuHeading1 } from 'react-icons/lu'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const SignIn = () => {
   const [email, setEmail] = useState('')
@@ -60,7 +60,7 @@ const SignIn = () => {
           </div>
           <div className='mt-9'>
             <span className='text-sm text-white'>Need an account? </span>
-            <button className='text-sm text-blue-300 hover:text-white duration-500'> Sign up now!</button>
+            <Link to='/signup' className='text-sm text-blue-300 hover:text-white duration-500'> Sign up now!</Link>
           </div>
         </div>
     </form>
