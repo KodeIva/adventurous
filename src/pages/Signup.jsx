@@ -8,15 +8,15 @@ const Signup = () => {
         <h4>Register</h4>
         <div>
           <label htmlFor="">Username</label>
-          <input type="text" />
+          <input type="text" required/>
         </div>
         <div>
           <label htmlFor="">Email</label>
-          <input type="email" name="email" />
+          <input type="email" name="email" required/>
         </div>
         <div>
           <label htmlFor="">Password</label>
-          <input type="password" name="password" />
+          <input type="password" name="password" required/>
         </div>
         <button>Register</button>
       </div>
