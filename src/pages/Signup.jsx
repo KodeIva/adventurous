@@ -7,17 +7,17 @@ const Signup = () => {
     <form method="POST" className="bg-red-400 w-[80%] md:w-[50%] lg:w-[30%]">
       <div>
         <h4>Register</h4>
-        <div>
-          <label htmlFor="">Username</label>
-          <input type="text" required/>
+        <div className="flex flex-col">
+          <label className="mt-5 mb-2" htmlFor="">Username</label>
+          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5 " type="text" required/>
         </div>
-        <div>
-          <label htmlFor="">Email</label>
-          <input type="email" name="email" required/>
+        <div className="flex flex-col">
+          <label className="mt-5 mb-2" htmlFor="">Email</label>
+          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5" type="email" name="email" required/>
         </div>
-        <div>
-          <label htmlFor="">Password</label>
-          <input type="password" name="password" required/>
+        <div className="flex flex-col">
+          <label className="mt-5 mb-2" htmlFor="">Password</label>
+          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5" type="password" name="password" required/>
         </div>
         <button>Register</button>
         <Link to='/signin'>Login</Link>
