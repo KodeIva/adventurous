@@ -10,18 +10,18 @@ const Signup = () => {
         
         <div className="flex flex-col">
           <label className="mt-5 mb-2" htmlFor="">Username</label>
-          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5 " type="text" required/>
+          <input className="signin-input" type="text" required/>
         </div>
         <div className="flex flex-col">
           <label className="mt-5 mb-2" htmlFor="">Email</label>
-          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5" type="email" name="email" required/>
+          <input className="signin-input" type="email" name="email" required/>
         </div>
         <div className="flex flex-col">
           <label className="mt-5 mb-2" htmlFor="">Password</label>
-          <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5" type="password" name="password" required/>
+          <input className="signin-input" type="password" name="password" required/>
         </div>
         
-        <button className="bg-white text-blue-400 w-full mt-7 border-2 border-md border-slate-400 rounded-md h-10 pl-5 pr-[20px] hover:text-white hover:bg-blue-400 duration-500">Register</button>
+        <button className="bg-white text-slate-500 font-semibold w-full mt-7 border-2 border-md border-white rounded-xl h-10 pl-5 pr-[20px] hover:text-white hover:bg-slate-500 duration-500">Register</button>
         
         
         <div className="mt-9">
