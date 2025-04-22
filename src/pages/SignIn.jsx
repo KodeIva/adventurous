@@ -36,6 +36,7 @@ const SignIn = () => {
                id='email'
                name='email'
                value={email}   
+               required
                onChange={(e) => setEmail(e.target.value)}
             />
           </div>
@@ -47,6 +48,7 @@ const SignIn = () => {
               id='password'
               name='password'
               value={password}
+              required
               onChange={(e) => setPassword(e.target.value)}
               />
           </div>
