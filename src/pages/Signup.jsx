@@ -3,13 +3,13 @@ import { Link } from "react-router-dom"
 
 
 const Signup = () => {
-  const [userName, setUsername] = useState('')
+  const [username, setUsername] = useState('')
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(userName,email,password);
+    console.log(username,email,password);
   }
 
   return (
@@ -20,15 +20,34 @@ const Signup = () => {
         
         <div className="flex flex-col">
           <label className="mt-3 mb-2 label" htmlFor="">Username</label>
-          <input className="signin-input" type="text" required/>
+          <input 
+            className="signin-input" 
+            type="text" name="username" 
+            required 
+            value={username} 
+            onChange={(e) => setUsername(e.target.value)}
+          />
         </div>
         <div className="flex flex-col">
           <label className="mt-3 mb-2 label" htmlFor="">Email</label>
-          <input className="signin-input" type="email" name="email" required/>
+          <input 
+            className="signin-input" 
+            type="email" name="email" 
+            required 
+            value={email} 
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </div>
         <div className="flex flex-col">
           <label className="mt-3 mb-2 label" htmlFor="">Password</label>
-          <input className="signin-input" type="password" name="password" required/>
+          <input 
+            className="signin-input" 
+            type="password" 
+            name="password" 
+            required 
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </div>
         
         <button className="bg-white text-slate-500 font-semibold w-full mt-7 border-2 border-md border-white rounded-xl h-10 pl-5 pr-[20px] hover:text-white hover:bg-slate-500 duration-500">Register</button>
