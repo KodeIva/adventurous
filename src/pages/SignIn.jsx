@@ -60,7 +60,7 @@ const SignIn = () => {
           </div>
           <div className='mt-9'>
             <span className='text-sm text-white'>Need an account? </span>
-            <Link to='/signup' className='text-sm text-blue-300 hover:text-white duration-500'> Sign up now!</Link>
+            <Link to='/signup' className='link'> Sign up now!</Link>
           </div>
         </div>
     </form>

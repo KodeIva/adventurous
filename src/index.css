@@ -20,4 +20,8 @@
     .signin-input {
         @apply h-10 text-slate-500 font-medium rounded-xl outline-none pl-3;
     }
+
+    .link {
+        @apply text-sm text-blue-300 hover:text-white duration-500;
+    }
 }

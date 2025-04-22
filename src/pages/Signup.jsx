@@ -23,10 +23,9 @@ const Signup = () => {
         
         <button className="bg-white text-slate-500 font-semibold w-full mt-7 border-2 border-md border-white rounded-xl h-10 pl-5 pr-[20px] hover:text-white hover:bg-slate-500 duration-500">Register</button>
         
-        
         <div className="mt-9">
-          
-          <Link to='/signin'>Login</Link>
+          <span className='text-sm text-white'>Already registered? </span>
+          <Link className="link" to='/signin'> Login</Link>
         </div>
         
       </div>
