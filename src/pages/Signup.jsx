@@ -9,15 +9,15 @@ const Signup = () => {
       <div>
         
         <div className="flex flex-col">
-          <label className="mt-5 mb-2" htmlFor="">Username</label>
+          <label className="mt-3 mb-2 label" htmlFor="">Username</label>
           <input className="signin-input" type="text" required/>
         </div>
         <div className="flex flex-col">
-          <label className="mt-5 mb-2" htmlFor="">Email</label>
+          <label className="mt-3 mb-2 label" htmlFor="">Email</label>
           <input className="signin-input" type="email" name="email" required/>
         </div>
         <div className="flex flex-col">
-          <label className="mt-5 mb-2" htmlFor="">Password</label>
+          <label className="mt-3 mb-2 label" htmlFor="">Password</label>
           <input className="signin-input" type="password" name="password" required/>
         </div>
         
