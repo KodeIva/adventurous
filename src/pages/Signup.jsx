@@ -20,8 +20,15 @@ const Signup = () => {
           <label className="mt-5 mb-2" htmlFor="">Password</label>
           <input className="border-2 border-md border-slate-400 rounded-md h-12 pl-5" type="password" name="password" required/>
         </div>
-        <button>Register</button>
-        <Link to='/signin'>Login</Link>
+        
+        <button className="bg-white text-blue-400 w-full mt-7 border-2 border-md border-slate-400 rounded-md h-10 pl-5 pr-[20px] hover:text-white hover:bg-blue-400 duration-500">Register</button>
+        
+        
+        <div className="mt-9">
+          
+          <Link to='/signin'>Login</Link>
+        </div>
+        
       </div>
 
     </form>
