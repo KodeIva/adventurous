@@ -61,7 +61,7 @@ const SignIn = () => {
            </button>
           
           <div>
-            <button className='pr-[20px] text-sm text-blue-300 hover:text-white duration-500'>Forgot Password?</button>
+            <Link to='/reset_password' className='pr-[20px] text-sm text-blue-300 hover:text-white duration-500'>Forgot Password?</Link>
           </div>
           <div className='mt-9'>
             <span className='text-sm text-white'>Need an account? </span>
