@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import ScrollToTop from 'react-scroll-to-top';
 import SignIn from './pages/SignIn';
 import Signup from './pages/Signup';
+import ResetPassword from './pages/ResetPassword';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path='/articles' element={<Articles/>} />
         <Route path='/signin' element={<SignIn />} />
         <Route path='/signup' element={<Signup />} />
+        <Route path='/reset_password' element={<ResetPassword/>} />
       </Routes>
       <ScrollToTop smooth color='white' style={{display: 'flex', color: 'lightgreen', backgroundColor: 'lightgreen', justifyContent: 'center',borderRadius: '15%', alignItems: 'center',fontSize: '900', width: '50px'}}/>
       <Footer />
