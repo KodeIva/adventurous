@@ -21,8 +21,9 @@ const ResetPassword = () => {
                     className='signin-input'
                     type="text" 
                     id='email'
-                    name='email'
+                    name='email'   
                     required
+                    onChange={(e) => setEmail(e.target.value)}
                  />
                </div>
                
