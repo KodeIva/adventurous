@@ -4,7 +4,20 @@ const Search = () => {
   return (
    <section className='flex flex-col justify-center items-center md:flex-row w-full h-auto p-1'> 
     <div className='w-[80%] md:w-[50%] lg:w-[50%] px-2 py-6'>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta rerum corporis repellendus esse ratione iste velit in aperiam dolores facere, ad autem quas, asperiores officiis architecto cumque? Exercitationem a quasi ab reiciendis asperiores saepe debitis laudantium? Reiciendis fuga accusamus voluptas voluptates repellendus recusandae, accusantium placeat a suscipit, dicta minus iure!
+      <h2 className='text-3xl mb-4 font-medium text-slate-700'>Special Holiday Travel Offer!</h2>
+      <p className='py-2'>Planning your next getway? Now is the perfect time!</p>
+      <p className='py-2'>Book your holiday with us and enjoy <span className='font-semibold'>up to 40%</span> on selected travel 
+         packages to some of the world's most beautiful destinations.
+      </p>
+      <p className='py-2'>
+        Whether you're dreaming of relaxing beach, exploring a vibrant city, or
+        escaping to a peaceful mountain retreat- we have perfect trip waiting for you.
+      </p>
+      <p className='py-2'>
+        This is a <span className='font-semibold'>limited-time offer</span>
+        , so don't wait!
+      </p>
+      <p className='font-semibold'>Let's the adventure begin!</p>
     </div>
     <div className='flex flex-col justify-center items-center w-[80%] md:w-[40%] lg:w[30%] py-6'>
         <div className='relative flex flex-col w-[80%] border-2 text-blue-900 border-blue-900 py-5 justify-center items-center'>
