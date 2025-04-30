@@ -2,9 +2,9 @@ import React from 'react'
 
 const Search = () => {
   return (
-   <section className='flex flex-col justify-center items-center md:flex-row w-full h-auto p-1'> 
-    <div className='w-[80%] md:w-[50%] lg:w-[50%] px-2 py-6'>
-      <h2 className='text-3xl mb-4 font-medium text-slate-700'>Special Holiday Travel Offer!</h2>
+   <section className='flex flex-col justify-center items-center sm:flex-col md:bg-red-300 md:flex-row w-full h-auto p-1'> 
+    <div className='w-[80%] md:w-[50%]  lg:w-[50%] px-2 py-6'>
+      <h2 className='text-3xl md:text-2xl lg:text-3xl mb-4 font-medium text-slate-700'>Special Holiday Travel Offer!</h2>
       <p className='py-2'>Planning your next getway? Now is the perfect time!</p>
       <p className='py-2'>Book your holiday with us and enjoy <span className='font-semibold'>up to 40%</span> on selected travel 
          packages to some of the world's most beautiful destinations.
@@ -19,9 +19,9 @@ const Search = () => {
       </p>
       <p className='font-semibold'>Let's the adventure begin!</p>
     </div>
-    <div className='flex flex-col justify-center items-center w-[80%] md:w-[40%] lg:w[30%] py-6'>
+    <div className='flex flex-col justify-center items-center w-[80%]  md:w-[45%] lg:w[30%] py-6'>
         <div className='relative flex flex-col w-[80%] border-2 text-blue-900 border-blue-900 py-5 justify-center items-center'>
-             <h2 className='uppercase mb-7 tracking-wide'>Firts time booking - get 15% off</h2>
+             <h2 className='uppercase mb-7 tracking-wide md:text-sm lg:text-lg '>Firts time booking - get 15% off</h2>
              <button className='absolute bottom-0 uppercase tracking-wide w-[100%] bg-blue-900 text-white py-1 '>Book now and save</button>
         </div>
         <form className='flex flex-col justify-center items-center w-[80%]'>
