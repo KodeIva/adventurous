@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { FaSquareFacebook, FaLinkedin, FaSquareWhatsapp } from "react-icons/fa6";
+import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
+import { AiFillTikTok } from "react-icons/ai";
+import { IoLogoYoutube } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -36,6 +40,16 @@ const Footer = () => {
             <Link to="/articles">Articles</Link>
           </li>
          </ul>
+         </div>
+         <div className='bg-green-800 flex py-3 items-center justify-center text-white w-full h-auto'>
+          <ul className='flex flex-row'>
+            <li ><a href=""><FaSquareFacebook className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+            <li><a href=""><FaInstagramSquare className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+            <li><a href=""><AiFillTikTok className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+            <li><a href=""><FaYoutubeSquare className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+            <li><a href=""><FaLinkedin className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+            <li><a href=""><FaSquareWhatsapp className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8' /></a></li>
+          </ul>
          </div>
         <div className='text-blue-600'>
            <span> @ Copyright 
