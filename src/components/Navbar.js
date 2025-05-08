@@ -70,9 +70,15 @@ const Navbar = () => {
             <Link to="/articles" onClick={() => setClick(!click)}>Articles</Link>
            </li>
            <div className='flex flex-col w-[90%]'>
-            <button className='w-[100%]  my-2 bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg hover:bg-white hover:bg-gradient-to-l hover:from-teal-500 hover:to-teal-300 text-white pb-3 pt-3 transition duration-700'>Search</button>
+            <Link to='/'>
+              <button 
+                onClick={() => setClick(!click)}
+                className='w-[100%]  my-2 bg-gradient-to-r from-teal-500 to-teal-300 rounded-lg hover:bg-white hover:bg-gradient-to-l hover:from-teal-500 hover:to-teal-300 text-white pb-3 pt-3 transition duration-700'>Search</button>
+            </Link>
             <Link to='/signin'>
-              <button className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Account</button>
+              <button 
+                onClick={() => setClick(!click)}
+                className='w-[100%] border-2 border-transparent my-2 bg-teal-300 rounded-lg hover:bg-white hover:text-teal-300 hover:border-2 hover:border-teal-300 text-white pb-3 pt-3 transition duration-700'>Account</button>
             </Link>
             
            </div>
