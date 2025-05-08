@@ -1,12 +1,21 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ResetPassword = () => {
   const [email, setEmail] = useState('')
+
+  const navigate = useNavigate()
+
+  const routeChange = () => {
+    let path = `/signin`
+    navigate(path)
+  }
 
 
   const handleSubmit = (e) => {
     e.preventDefault()
     console.log(email);
+    routeChange()
   }
 
   return (
