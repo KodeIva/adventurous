@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 import { FaSquareFacebook, FaLinkedin, FaSquareWhatsapp } from "react-icons/fa6";
 import { FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa";
 import { AiFillTikTok } from "react-icons/ai";
+import { GiEarthAmerica } from 'react-icons/gi';
+
 
 const Footer = () => {
   return (
@@ -52,18 +54,30 @@ const Footer = () => {
           </li>
          </ul>
          </div>
-        <div className='text-white'>
-           <span> @ Copyright 
+
+        <div className='flex flex-col md:flex-col md:justify-center lg:flex-row w-full lg:justify-between lg:items-center'>
+           <div className='flex self-center'>
+             <Link to="/">
+               <span className='flex text-lg xl:text-lg py-2'>
+                 <span className='text-blue-100'>ADVENTUR</span>  
+                 <span className='text-blue-300'><GiEarthAmerica /></span> 
+                 <span className='text-blue-100'>US</span>
+              </span>
+             </Link>
+           </div>
+           <div className='text-white'>
+             <span> @ Copyright 
              <span> {new Date().getFullYear()} - </span> 
              <a 
               href="https://kodeiva.netlify.app" 
               target='blank'
               className='font-serif text-lg font-medium tracking-wider hover:text-blue-800  transition-transform ease-in-out duration-700'
              >
-             KodeIva
+               KodeIva
              </a> 
            </span>
           </div>
+         </div>   
     </section>
   )
 }
