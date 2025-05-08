@@ -7,6 +7,18 @@ import { AiFillTikTok } from "react-icons/ai";
 const Footer = () => {
   return (
     <section className="flex flex-col justify-center items-center text-center w-full h-auto p-3 bg-indigo-900" >
+       <div className='flex py-3 border-b-2 items-center justify-end text-white w-full h-auto'>
+          <h1>Follow us </h1>
+          <ul className='flex flex-row'>
+            <li ><a href=""><FaSquareFacebook className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href=""><FaInstagramSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href=""><AiFillTikTok className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href=""><FaYoutubeSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href=""><FaLinkedin className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href=""><FaSquareWhatsapp className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+          </ul>
+          <hr className='bg-slate-400 h-2'/>
+         </div>
       <div className='flex'>
         <ul className="flex flex-col items-start lg:flex-row w-full h-auto md:justify-center text-center p-9 " >
           <li className='xl:text-xl mb-1 mx-4 text-white bold tracking-wide hover:text-blue-200 hover:-translate-x-2 transition ease-in-out duration-700'>
@@ -39,16 +51,6 @@ const Footer = () => {
             <Link to="/articles">Articles</Link>
           </li>
          </ul>
-         </div>
-         <div className='flex py-3 items-center justify-center text-white w-full h-auto'>
-          <ul className='flex flex-row'>
-            <li ><a href=""><FaSquareFacebook className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaInstagramSquare className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><AiFillTikTok className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaYoutubeSquare className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaLinkedin className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaSquareWhatsapp className='m-2 lg:mx-5 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-          </ul>
          </div>
         <div className='text-white'>
            <span> @ Copyright 
