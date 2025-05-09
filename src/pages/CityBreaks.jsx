@@ -28,7 +28,13 @@ const CityBreaks = () => {
               className='h-9 bg-transparent outline-none w-72' placeholder='2 travelers, 1 room'
               onClick={() => setIsOpen(!isOpen)}
            />   
-          
+          {
+            isOpen && 
+            <div className='absolute z-50 w-[100%] h-1/2 md:w-96 md:h-96 bg-orange-200 '>
+               <button onClick={() => setIsOpen(isOpen)}>X</button>
+              
+            </div>
+          }
           </label>
           
           <button 
@@ -37,7 +43,7 @@ const CityBreaks = () => {
           >
             Search
           </button>
-          {!isOpen && <div className='w-96 h-96 bg-orange-200'></div>}
+     
         </form>
      </div>
     </section>
