@@ -5,6 +5,7 @@ import { TbXboxX } from "react-icons/tb";
 
 const CityBreaks = () => {
   const [isOpen, setIsOpen] = useState()
+  const [adultCount, setAdultCount] = useState(0)
   return (
     <section className='w-full h-auto'>
       <div className='flex flex-col justify-center items-center'>
@@ -42,10 +43,14 @@ const CityBreaks = () => {
                 <div className='my-5 py-2 w-[100%]'>
                   <div className='flex items-center w-full h-[50px] justify-between'>
                     <p className='text-xl'>Adults</p>
-                    <div className='w-[30%]'>
-                      <span className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>-</span>
-                      <span className='text-3xl mx-4 w-6 '>0</span>
-                      <span className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>+</span>
+                    <div className=' w-[40%]'>
+                      <span 
+                        onClick={() => setAdultCount(adultCount - 1)}
+                        className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>-</span>
+                      <span className='text-3xl w-15 h-5 mx-4 '>{adultCount}</span>
+                      <span 
+                        onClick={() => setAdultCount(adultCount + 1)}
+                        className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>+</span>
                     </div>
                   </div>
                 </div>
