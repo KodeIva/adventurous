@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { IoLocationOutline, IoPersonOutline } from "react-icons/io5";
 import { BsCalendar4Range } from "react-icons/bs";
+import { TbXboxX } from "react-icons/tb";
 
 const CityBreaks = () => {
   const [isOpen, setIsOpen] = useState()
@@ -30,9 +31,24 @@ const CityBreaks = () => {
            />   
           {
             isOpen && 
-            <div className='absolute z-50 w-[100%] h-1/2 md:w-96 md:h-96 bg-orange-200 '>
-               <button onClick={() => setIsOpen(isOpen)}>X</button>
-              
+            <div className='absolute p-3 z-50 w-[100%] h-1/2 md:w-96 md:h-96 bg-orange-200 '>
+               <div className='flex '>
+                <button onClick={() => setIsOpen(isOpen)}>
+                  <TbXboxX className='text-3xl'/>
+                </button>
+                <span className='text-2xl'>Travellers</span>
+               </div>
+             
+                <div className='my-5 py-2 w-[100%]'>
+                  <div className='flex items-center w-full h-[50px] justify-between'>
+                    <p className='text-xl'>Adults</p>
+                    <div className='w-[30%]'>
+                      <span className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>-</span>
+                      <span className='text-3xl mx-4 w-6 '>0</span>
+                      <span className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>+</span>
+                    </div>
+                  </div>
+                </div>
             </div>
           }
           </label>
