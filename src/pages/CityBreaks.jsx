@@ -6,6 +6,7 @@ import { TbXboxX } from "react-icons/tb";
 const CityBreaks = () => {
   const [isOpen, setIsOpen] = useState()
   const [adultCount, setAdultCount] = useState(0)
+  const [childrenCount, setChildrenCount] = useState(0)
   return (
     <section className='w-full h-auto'>
       <div className='flex flex-col justify-center items-center'>
@@ -50,6 +51,21 @@ const CityBreaks = () => {
                       <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{adultCount}</div>
                       <div 
                         onClick={() => setAdultCount(adultCount + 1)}
+                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>+</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='my-5 py-2 w-[100%]'>
+                  <div className='flex  items-center w-full h-[50px] justify-between'>
+                    <p className='text-xl'>Children</p>
+                    <div className='flex justify-between w-[30%]'>
+                      <div 
+                        onClick={() => setChildrenCount(childrenCount - 1)}
+                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>-</div>
+                      <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{childrenCount}</div>
+                      <div 
+                        onClick={() => setChildrenCount(childrenCount + 1)}
                         className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>+</div>
                     </div>
                   </div>
