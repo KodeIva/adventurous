@@ -58,7 +58,11 @@ const CityBreaks = () => {
 
                 <div className='my-5 py-2 w-[100%]'>
                   <div className='flex  items-center w-full h-[50px] justify-between'>
-                    <p className='text-xl'>Children</p>
+                    <div>
+                      <p className='text-xl'>Children</p>
+                      <p className='text-md'>Ages 0 to 17</p>
+                    </div>
+                    
                     <div className='flex justify-between w-[30%]'>
                       <div 
                         onClick={() => setChildrenCount(childrenCount - 1)}
