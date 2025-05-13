@@ -43,14 +43,14 @@ const CityBreaks = () => {
                 <div className='my-5 py-2 w-[100%]'>
                   <div className='flex items-center w-full h-[50px] justify-between'>
                     <p className='text-xl'>Adults</p>
-                    <div className=' w-[40%]'>
-                      <span 
+                    <div className='flex justify-between w-[30%]'>
+                      <div 
                         onClick={() => setAdultCount(adultCount - 1)}
-                        className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>-</span>
-                      <span className='text-3xl w-15 h-5 mx-4 '>{adultCount}</span>
-                      <span 
+                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>-</div>
+                      <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{adultCount}</div>
+                      <div 
                         onClick={() => setAdultCount(adultCount + 1)}
-                        className='border-slate-700 text-3xl px-3 w-5 h-5 border-2 rounded-full'>+</span>
+                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>+</div>
                     </div>
                   </div>
                 </div>
