@@ -8,9 +8,17 @@ const CityBreaks = () => {
   const [adultCount, setAdultCount] = useState(0)
   const [childrenCount, setChildrenCount] = useState(0)
 
+  //adult minus disabled
+  const isAdultMinusDisabled = adultCount <= 0
+  const adultMinusDisabled = () => {
+    if(!isAdultMinusDisabled) {
+      setAdultCount(adultCount-1)
+    }
+  }
+
   //children minus disabled
   const isChildrenMinusDisabled = childrenCount <= 0
-  const minusDisabled = () => {
+  const childrenMinusDisabled = () => {
     if(!isChildrenMinusDisabled) {
       setChildrenCount(childrenCount-1)
     }
@@ -55,8 +63,8 @@ const CityBreaks = () => {
                     <p className='text-xl'>Adults</p>
                     <div className='flex justify-between w-[30%]'>
                       <div 
-                        onClick={() => setAdultCount(adultCount - 1)}
-                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>-</div>
+                        onClick={adultMinusDisabled}
+                        className={`flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full ${isAdultMinusDisabled ? 'border-gray-400 cursor-not-allowed' : 'cursor-pointer' }`}>-</div>
                       <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{adultCount}</div>
                       <div 
                         onClick={() => setAdultCount(adultCount + 1)}
@@ -74,7 +82,7 @@ const CityBreaks = () => {
                     
                     <div className='flex justify-between w-[30%]'>
                       <div 
-                        onClick={minusDisabled}
+                        onClick={childrenMinusDisabled}
                         className={`flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full  ${isChildrenMinusDisabled ? 'border-gray-400 cursor-not-allowed' : 'cursor-pointer'}`} >-</div>
                       <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{childrenCount}</div>
                       <div 
