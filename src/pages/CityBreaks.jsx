@@ -7,6 +7,15 @@ const CityBreaks = () => {
   const [isOpen, setIsOpen] = useState()
   const [adultCount, setAdultCount] = useState(0)
   const [childrenCount, setChildrenCount] = useState(0)
+
+  //children minus disabled
+  const isChildrenMinusDisabled = childrenCount <= 0
+  const minusDisabled = () => {
+    if(!isChildrenMinusDisabled) {
+      setChildrenCount(childrenCount-1)
+    }
+  }
+
   return (
     <section className='w-full h-auto'>
       <div className='flex flex-col justify-center items-center'>
@@ -65,12 +74,14 @@ const CityBreaks = () => {
                     
                     <div className='flex justify-between w-[30%]'>
                       <div 
-                        onClick={() => setChildrenCount(childrenCount - 1)}
-                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>-</div>
+                        onClick={minusDisabled}
+                        className={`flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full  ${isChildrenMinusDisabled ? 'border-gray-400 cursor-not-allowed' : 'cursor-pointer'}`} >-</div>
                       <div className=' flex justify-center items-center text-2xl font-semibold w-15 h-8 mx-4'>{childrenCount}</div>
                       <div 
                         onClick={() => setChildrenCount(childrenCount + 1)}
-                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>+</div>
+                        className=' flex justify-center items-center border-slate-700 text-3xl px-3 w-8 h-8 border-2 rounded-full'>
+                          +
+                      </div>
                     </div>
                   </div>
                 </div>
