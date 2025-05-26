@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { LuHeading1 } from 'react-icons/lu'
 import { Link, useNavigate } from 'react-router-dom'
 
 const SignIn = () => {
