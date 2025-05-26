@@ -12,12 +12,12 @@ const Footer = () => {
        <div className='flex py-3 border-b-2 items-center justify-end text-white w-full h-auto'>
           <h1>Follow us </h1>
           <ul className='flex flex-row'>
-            <li ><a href=""><FaSquareFacebook className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaInstagramSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><AiFillTikTok className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaYoutubeSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaLinkedin className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
-            <li><a href=""><FaSquareWhatsapp className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.facebook.com/"><FaSquareFacebook className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.instagram.com/"><FaInstagramSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.tiktok.com/"><AiFillTikTok className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.youtube.com/"><FaYoutubeSquare className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.linkedin.com/"><FaLinkedin className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
+            <li><a href="https://www.whatsapp.com/"><FaSquareWhatsapp className='m-2 lg:mx-2 w-6 h-6 lg:w-8 lg:h-8 hover:scale-110 hover:text-blue-300 duration-700' /></a></li>
           </ul>
           <hr className='bg-slate-400 h-2'/>
          </div>
