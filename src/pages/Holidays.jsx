@@ -4,7 +4,6 @@ import {destinations} from '../data'
 import Search from '../components/Search'
 
 
-
 const Holidays = () => {
   const [isClicked, setIsClicked] = useState(true)
   const [holidays,setHolidays] = useState(destinations)
